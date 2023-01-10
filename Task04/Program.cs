@@ -16,13 +16,12 @@ void PrintArr3D(int[,,] array)
             {
                 Console.Write($" {array[i, j, k]}  [{i}, {j} ,{k}] ");
             }
-
         }
         Console.WriteLine();
     }
 }
 
-int[,,] FillArray3D(int x, int y, int z , int min, int max)
+int[,,] FillArray3D(int x, int y, int z, int min, int max)
 {
     int[,,] array = new int[x, y, z];
     for (int i = 0; i < x; i++)
@@ -39,5 +38,5 @@ int[,,] FillArray3D(int x, int y, int z , int min, int max)
     return array;
 }
 
-int[, ,] array1 = FillArray3D(2, 2, 2, 10, 99);
+int[,,] array1 = FillArray3D(2, 2, 2, 10, 99);
 PrintArr3D(array1);
